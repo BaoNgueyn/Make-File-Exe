@@ -1,7 +1,6 @@
 # This is a program making file exe from file py (<100 code sentences).
 
 print('This is a program making file exe from file py.')
-print('And it will save a file exe to desktop.')
 print("""
 ......................................................................
                            .   .  ....................................
@@ -36,18 +35,18 @@ os.system(pyinst)
 
 path0 = ' "' + path + '" '
 
-# copy file py to any where
+# copy file py to anywhere
 pathpy = ' "' + os.path.join(path, file) + '" '
 pathpycopy = 'copy' + pathpy + r'"C:\Program Files" /y'
 os.system(pathpycopy)
 
-# copy file exe to any where
+# copy file exe to anywhere
 pathexe = ' "' + os.path.join(path, 'dist', file.replace('.py', '.exe')) + '" '
 pathexecopy = 'copy' + pathexe + r'"C:\Program Files" /y'
 os.system(pathexecopy)
 
 # delete file and subfolder in main folder
-pathcd = 'cd' + ' "' + path + '" '
+pathcd = 'cd' + path0
 os.system(pathcd)
 os.system('rd /s /q . 2>nul')
 
