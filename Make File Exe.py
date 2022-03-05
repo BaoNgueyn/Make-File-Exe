@@ -1,6 +1,6 @@
 # This is a program making file exe from file py (<100 code sentences).
 
-print('This is a program making file exe from file py (<100 code sentences).')
+print('This is a program making file exe from file py.')
 print('And it will save a file exe to desktop.')
 print("""
 ......................................................................
